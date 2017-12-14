@@ -1,13 +1,7 @@
 let fs = require('graceful-fs')
-let dir = require('node-dir')
 let concat = require('concatenate-files')
-let walk = require('fs-walk')
+
 let _ = require('lodash')
-
-
-//const dirNum = process.argv[2]
-
-//console.log("param: " + dirNum)
 
 let dirs = fs.readFileSync("/Users/mtbutler/Desktop/yf/directory-list.json")
 let directories = JSON.parse(dirs)
